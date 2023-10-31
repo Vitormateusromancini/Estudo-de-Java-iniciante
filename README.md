@@ -18,7 +18,7 @@ class Meuprograma {
 }
 
 ```
-Que logo a mais vai ser explicado sobr, mas o mais importante saber é que para fazer o famoso printf se usa:
+Que logo mais seráexplicado, mas o mais importante é que para fazer o famoso printf se usa:
 
 
 ```Java
@@ -63,9 +63,9 @@ Não se pode esquecer também do else que indica o cpmportamento booleano falso.
 
 int idade = 15;
 if (idade < 18)	{
-				System.out.println("Não	pode	entrar");
+ System.out.println("Não	pode	entrar");
 } else	{
-				System.out.println("Pode	entrar");
+ System.out.println("Pode	entrar");
 }
 
 // uso de operadores lógicos dentro do if 
@@ -90,7 +90,7 @@ if(idade < 18 || !amigoDoDono) { //ser maior de idade ou nao ser o amigo do dono
 
 int mes=1;
 if (mes==1) {
-				System.out.println("Você	deveria	estar	de	férias");
+ System.out.println("Você deveria estar de férias");
 }
 
 ```
