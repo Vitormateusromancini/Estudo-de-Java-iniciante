@@ -61,10 +61,10 @@ Não se pode esquecer também do else que indica o cpmportamento booleano falso.
 
 ```Java
 
-int	idade	=	15;
-if	(idade	<	18)	{
+int idade = 15;
+if (idade < 18)	{
 				System.out.println("Não	pode	entrar");
-}	else	{
+} else	{
 				System.out.println("Pode	entrar");
 }
 
@@ -73,9 +73,9 @@ if	(idade	<	18)	{
 int idade = 15; 
 boolean amigoDoDono = false;
 if(idade < 18 && !amigoDoDono) { //ser maior de idade e nao ser o amigo do dono) - vai dar não pode entrar 
-  System.out.println("Não	pode	entrar");
+  System.out.println("Não pode entrar");
 }else{
-  System.out.println("Pode	entrar");
+  System.out.println("Pode entrar");
 }
 
 int idade = 15; 
@@ -88,9 +88,37 @@ if(idade < 18 || !amigoDoDono) { //ser maior de idade ou nao ser o amigo do dono
 
 // Utilização do operador == no if 
 
-int	mes	=	1;
-if	(mes	==	1)	{
+int mes=1;
+if (mes==1) {
 				System.out.println("Você	deveria	estar	de	férias");
 }
 
+```
+O uso do while é um comando para fazer laços (loops) repetindo um trecho de código algumas vezes, o qual é a mesma situação para o comando for mas para ele tem um espaço para incializar suas variáveis. 
+
+```Java
+int idade = 15; 
+
+while (idade < 18) {
+  System.out.println(idade);
+  idade = idade + 1;
+}
+
+//Uso do for 
+
+for (inicializacao; condicao; incremento) {
+  codigo;
+}
+
+for (int i = 0; i < 10; i = i + 1) {
+   System.out.println("olá!");
+}
+
+//codigo igual a 
+
+int i = 0;
+while( i < 10){
+ System.out.println("olá!");
+ i = i + 1;
+}
 ```
