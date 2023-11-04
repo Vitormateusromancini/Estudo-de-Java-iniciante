@@ -22,3 +22,20 @@ class Programa {
    minhaConta = new Conta();
   }
 }
+
+//acesso a objeto recém criado para alterar os dados 
+
+class Programa{
+	public static void main (String[] args) {
+		Conta minhaConta;
+		minhaConta = new Conta(); 
+
+		minhaConta.titular = "Vitor Mateus";
+		minhaConta.saldo = 1000.0; 
+
+		System.out.println("Saldo atual: + minhaConta.saldo);
+	}
+}
+
+
+	
