@@ -1,30 +1,147 @@
 //1. Faça um programa que receba dois números, calcule e mostre a
 //subtração do primeiro número pelo segundo.
 
+public class Questao1 {
+  
+	public static void main(String[] args) {
+    
+		double numero1, numero2,resultado;
+    
+		System.out.print("Informe o priemrio valor: ");
+		numero1 = Double.parseDouble(System.console().readLine());
+    
+		System.out.print("Informe o segundo valor: ");
+		numero2 = Double.parseDouble(System.console().readLine());
+    
+		resultado = numero1-numero2;
+    
+		System.out.printf("Resultado = %f\n", resultado);
+	}
+}
+
 //2. Faça um programa que receba dois números, calcule e mostre a divisão
 //do primeiro pelo segundo. Sabe-se que o segundo número não pode ser
 //zero, portanto, não é necessário se preocupar com isso neste exercício.
 
+public class Questao2 {
+  
+	public static void main(String[] args) {
+    
+		double numero1, numero2,resultado;
+    
+		System.out.print("Informe o priemrio valor: ");
+		numero1 = Double.parseDouble(System.console().readLine());
+    
+		System.out.print("Informe o segundo valor: ");
+		numero2 = Double.parseDouble(System.console().readLine());
+    
+		resultado = numero1/numero2;
+    
+		System.out.printf("Resultado = %f\n", resultado);
+	}
+}
 //3. Faça um programa que receba três notas de um estudante, calcule e
 //mostre a média aritmética entre elas (este exercício é similar ao exemplo
 //mostrado a neste capítulo, mas leva em consideração três notas e não
 //quatro).
 
+public class Questao3 {
+	public static void main(String[] args) {
+
+		double numero1, numero2, resultado, numero3;
+
+		System.out.print("Informe o priemrio valor: ");
+		numero1 = Double.parseDouble(System.console().readLine());
+
+		System.out.print("Informe o segundo valor: ");
+        numero2 = Double.parseDouble(System.console().readLine());
+
+		System.out.print("Informe o segundo valor: ");
+		numero3 = Double.parseDouble(System.console().readLine());
+
+		resultado = (numero1+numero2+numero3)/3;
+
+		System.out.printf("Resultado = %f\n", resultado);
+	}
+}
+
 //4. Faça um programa que receba o preço de um produto, calcule e mostre o novo preço, sabendo-se que este sofreu um desconto de 10%. Por exemplo, se o produto custa R$ 100,00, 
 //o novo preço será 100 menos 10% de cem, que é 100 x 10 / 100. Essa conta é igual a 10, ficando o novo preço R$ 90,00.
 
+public class Questao4 {
+	public static void main(String[] args) {
+
+		double numero1, resultado;
+
+		System.out.print("Informe o preço do produto: ");
+		numero1 = Double.parseDouble(System.console().readLine());
+
+		resultado = numero1 - numero1*10/numero1;
+
+		System.out.printf("Resultado = %f\n", resultado);
+	}
+}
 
 //5. Faça um programa que receba o salário base de um funcionário, calcule e mostre o salário a receber, sabendo-se que o funcionário tem
 //gratificação de 5% sobre o salário base (que será acrescentado ao salário) e paga imposto de 7% sobre este salário (o que será descontado do salário).
 
 
+public class Questao5 {
+	public static void main(String[] args) {
+
+		double salario_base, resultado;
+
+		System.out.print("Salário base do funcionário: ");
+		salario_base = Double.parseDouble(System.console().readLine());
+
+		resultado = salario_base - salario_base*5/salario_base - salario_base*7/salario_base ;
+
+		System.out.printf("Resultado = %f\n", resultado);
+	}
+}
 //6. Um funcionário recebe um salário fixo mais 4% de comissão sobre as vendas (4% do valor das vendas efetuadas pelo funcionário). Faça um
 //programa que receba o salário fixo do funcionário e o valor de suas vendas, calcule e mostre a comissão e seu salário final.
+
+public class Questao6 {
+	public static void main(String[] args) {
+
+		double salario_base, vendas, resultado;
+
+		System.out.print("Salário base do funcionário: ");
+		salario_base = Double.parseDouble(System.console().readLine());
+
+		System.out.print("Valor de suas vendas: ");
+		vendas = Double.parseDouble(System.console().readLine());
+
+		resultado = salario_base + vendas*4/vendas ;
+
+		System.out.printf("Resultado = %f\n", resultado);
+	}
+}
 
 //7. Faça um programa que receba três notas e seus respectivos pesos, calcule e mostre a média ponderada dessas notas. Para calcular a
 //média ponderada, multiplique cada nota por seus respectivos pesos, some todos os resultados e divida pela soma dos pesos. Por exemplo, se as notas forem 10, 5 e 6, e os pesos 1, 2 e 3, a média final do
 //estudante seria 10 x 1 + 5 x 2+ 3 x 6, que resulta em 10 + 10 + 18 = 38. Esse valor deve ser dividido pela soma dos pesos (6), resultando em 6,3.
 
+public class Questao7 {
+	public static void main(String[] args) {
+
+		double nota1, nota2, nota3, resultado;
+
+		System.out.print("nota1: ");
+		nota1 = Double.parseDouble(System.console().readLine());
+
+		System.out.print("nota2: ");
+		nota2 = Double.parseDouble(System.console().readLine());
+
+		System.out.print("nota3: ");
+		nota3 = Double.parseDouble(System.console().readLine());
+
+		resultado = (nota1*1 + nota2*2 + nota3*3)/6;
+
+		System.out.printf("Resultado = %f\n", resultado);
+	}
+}
 
 //8. Faça um programa que calcule e mostre a área de um triângulo. Sabe-se que: Área = (base x altura) / 2. A base e altura devem ser informadas pelo usuário.
 
