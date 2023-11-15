@@ -234,12 +234,63 @@ public class Questao11 {
 //b. o valor correspondente aos impostos;
 //c. o preço final do produto.
 
+public class Questao12 {
+
+	public static void main(String[] args) {
+		double fábrica, distribuidor, imposto, lucro_dis, impos;
+        double res;
+
+		
+		System.out.print("Preço de fábrica :");
+		fábrica = Double.parseDouble(System.console().readLine());
+
+		System.out.print("Percentual de lucro do distribuidor:");
+		distribuidor = Double.parseDouble(System.console().readLine());
+
+		System.out.print("Impostos aplicados ao preço de fábrica");
+		imposto = Double.parseDouble(System.console().readLine());
+
+		lucro_dis = fábrica*distribuidor/fábrica;
+		impos = imposto*fábrica/fábrica;
+		res = fábrica + lucro_dis + impos;
+
+
+		System.out.printf(" o valor correspondente ao lucro do distribuidor= %f\n",lucro_dis );
+		System.out.printf("o valor correspondente aos impostos = %f\n",impos );
+		System.out.printf("o preço final do produto = %f\n",res );
+
+	}
+}
 
 //13. Faça um programa que receba o número de horas trabalhadas e o valor do salário mínimo, calcule e mostre o salário a receber seguindo estas regras:
 //a. a hora trabalhada vale um décimo do salário mínimo;
 //b. o salário bruto equivale ao número de horas trabalhadas multiplicado pelo valor da hora trabalhada;
 //c. o imposto equivale a 3% do salário bruto;
 //d. o salário a receber equivale ao salário bruto menos o imposto.
+
+public class Questao13 {
+
+	public static void main(String[] args) {
+		double horas, minimo, receber,hora,bruto, imposto;
+    
+
+		
+		
+		horas = Double.parseDouble(System.console().readLine());
+
+		minimo = Double.parseDouble(System.console().readLine());
+
+		hora = 0.1*minimo;
+		bruto = hora*horas;
+		imposto = 0.03*bruto;
+		receber = bruto - imposto; 
+
+
+		System.out.printf(" o salário a receber= %f\n",receber );
+		
+
+	}
+}
 
 
 //14. Sabe-se que o quilowatt de energia custa um quinto do salário mínimo. Faça um programa que receba o valor do salário mínimo e a quantidade de quilowatts consumida por uma residência, calcule e mostre:
@@ -248,6 +299,53 @@ public class Questao11 {
 //c. o valor a ser pago com desconto de 15%.
 
 
+public class Questao14 {
+
+	public static void main(String[] args) {
+		double quilowatt, minimo,cada,pago, desconto;
+    
+
+		
+		
+		quilowatt = Double.parseDouble(System.console().readLine());
+
+		minimo = Double.parseDouble(System.console().readLine());
+
+		cada = 1/5*minimo;
+		pago = cada*quilowatt;
+		desconto = pago - 0.15*pago;
+		
+
+
+		System.out.printf("o valor de cada quilowatt= %f\n",cada );
+
+		System.out.printf("o valor a ser pago por essa residência= %f\n",pago );
+		
+		System.out.printf("o valor a ser pago com desconto de 15%= %f\n",desconto);
+
+	}
+}
+
 //15. Faça um programa que receba uma temperatura em Celsius, calcule em mostre essa temperatura em Fahrenheit. Sabe
 
   
+public class Questao15 {
+
+	public static void main(String[] args) {
+		double celsius, fahrenheit;
+    
+
+		
+		
+		celsius = Double.parseDouble(System.console().readLine());
+
+		
+		fahrenheit = 9*celsius/5 + 32; 
+		
+
+
+		System.out.printf("fahrenheit",fahrenheit );
+
+		
+	}
+}
