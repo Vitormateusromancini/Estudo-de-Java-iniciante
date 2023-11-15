@@ -145,14 +145,58 @@ public class Questao7 {
 
 //8. Faça um programa que calcule e mostre a área de um triângulo. Sabe-se que: Área = (base x altura) / 2. A base e altura devem ser informadas pelo usuário.
 
+public class Questao8 {
+	public static void main(String[] args) {
+		double base, altura, resultado;
 
+		System.out.print("Valor da base:");
+		base = Double.parseDouble(System.console().readLine());
+
+		System.out.print("Valor da altura: ");
+		altura = Double.parseDouble(System.console().readLine());
+
+		resultado = (base*altura)/2;
+
+		System.out.printf("Resultado = %f\n", resultado);
+	}
+}
 //9. Faça um programa que calcule e mostre a área de um quadrado. Sabe- se que 𝐴 = 𝑙𝑎𝑑𝑜²
+
+public class Questao9 {
+	public static void main(String[] args) {
+		double base, altura, resultado;
+
+		System.out.print("Valor do lado:");
+		base = Double.parseDouble(System.console().readLine());
+
+		resultado = (lado*lado)/2;
+
+		System.out.printf("Resultado = %f\n", resultado);
+	}
+}
+
 //10. Sabe-se que: 1 pé = 12 polegadas ,1 jarda = 3 pés,1 milha = 1.760 jardas
 //Faça um programa que receba uma medida em pés , faça as conversões a seguir e mostre os resultados.
 //a. polegadas;
 //b. jardas;
 //c. milhas.
 
+public class Questao10 {
+	public static void main(String[] args) {
+		double pes, polegadas, jardas, milhas;
+
+		System.out.print("Valor em pés:");
+		pes = Double.parseDouble(System.console().readLine());
+
+		polegadas = pes*12;
+		jardas =3*pes;
+		milhas = 1760*jardas;
+
+		System.out.printf("polegadas = %f\n", polegadas);
+		System.out.printf("jardas = %f\n", jardas);
+		System.out.printf("milhas = %f\n", milhas);
+	}
+}
 
   
 //11. Faça um programa que receba o ano de nascimento de uma pessoa e o ano atual, calcule e mostre:
@@ -160,6 +204,28 @@ public class Questao7 {
 //b. a idade dessa pessoa em meses;
 //c. a idade dessa pessoa em dias (considerando que cada ano possui 365 dias);
 //d. a idade dessa pessoa em semanas (cada ano possui 52 semanas).
+
+public class Questao11 {
+	public static void main(String[] args) {
+		double ano_nascimento, ano_atual, idade_anos, idade_meses,idade_dias, idade_semanas;
+
+		System.out.print("A idade de nasimento:");
+		ano_nascimento = Double.parseDouble(System.console().readLine());
+
+		System.out.print("O ano atual:");
+		ano_atual = Double.parseDouble(System.console().readLine());
+
+		idade_anos = ano_atual - ano_nascimento;
+		idade_meses = idade_anos*12;
+		idade_dias = idade_anos*365;
+		idade_semanas = idade_anos*52;
+
+		System.out.printf("A idade dessa pessoa em anos= %f\n",idade_anos );
+		System.out.printf("A idade dessa pessoa em meses = %f\n",idade_meses );
+		System.out.printf("A idade dessa pessoa em dias = %f\n",idade_dias );
+		System.out.printf("A idade dessa pessoa em semanas= %f\n",idade_semanas );
+
+	}
 
 
 //12. O custo ao consumidor de um carro novo é a soma do preço de fábrica com o percentual de lucro do distribuidor e dos impostos aplicados ao preço de fábrica. Faça um programa que receba o preço de fábrica de 
