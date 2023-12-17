@@ -197,3 +197,77 @@ class Programa {
  }
 }
 ```
+
+# Métodos 
+
+Os métodos são uma maneir de fazer operções com um objeto. Com o exemplo criar um método que saca uma determinada quantidade e não devolve nenhuma informação pra quem acionar esse método:
+```Java
+class Conta{
+  double salario;
+  //outros atributos 
+
+void saca(double quantidade){
+  doble novoSaldo = this.saldo -quantidade; 
+  this.saldo = novoSaldo;
+}
+}
+```
+A palavra-chave void significa que quando pedir qye a conta saque uma quantia, nenhuma informação será enviada de volta a quem pediu. 
+Quando pedi o que sacar terá que declarar o método com algo no parênteses - chamado de argumento do método ou parâmetro. Ela é temporária ou local, pois, ao final da execução desse método, ela deixará de existir. 
+Assim como dentro do método terá argumentos criados que morrerão no fim do método. 
+No momento em que será acessado o atributo, usa-se a palavra-chave this para mostrar que esse é um atributo,e não uma simples variável.
+
+Da mesma forma, cria um método depositar de exemplo: 
+
+```Java
+class Conta{
+  double salario;
+  //outros atributos 
+
+void deposita(double quantidade) {
+  this.saldo +=quantidade; 
+}
+}
+```
+Criando os métodos podemos mandar uma mensagem ao objeto e pedir que ele execute um método, também usnado o ponto. 
+
+```Java
+class Programa{
+	public static void main (String[] args) {
+    Conta minhaConta;
+		minhaConta = new Conta(); 
+
+		minhaConta.titular = "Vitor Mateus";
+		minhaConta.saldo = 1000.0; 
+//saca 200
+    minhaConta.saca(200);
+//deposita 500
+    minhaConta.deposita(500);
+    System.out.println(minhaConta.saldo);
+  }
+}
+```
+métodos sempre tem de estabelecer o que retorna, mesmo definindo que não há retorno, como exemplo void, mas claro eles podem retornar valores como no exemplo abaixo: 
+
+```Java
+class Conta{
+  double salario;
+  //outros atributos 
+boolean saca(double valor) {
+  if(this.saldo <valor) {
+    return false; 
+  }else{
+    this.saldo = this.saldo - valor; 
+     return true 
+       }
+  }
+}
+```
+No exemplo acima o método saca não tem void na frente, portanto quando é acessado ele devolve algum tipo de informação. O return indica que o método terminará ali, retornando tal informação. 
+
+![image](https://github.com/Vitormateusromancini/Estudo-de-Java-iniciante/assets/77472862/a08a675d-bd7a-4440-ae87-e331b038be01)
+
+
+
+
+
