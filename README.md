@@ -63,9 +63,9 @@ Não se pode esquecer também do else que indica o cpmportamento booleano falso.
 
 int idade = 15;
 if (idade < 18)	{
- System.out.println("Não	pode	entrar");
+ System.out.println("Não pode entrar");
 } else	{
- System.out.println("Pode	entrar");
+ System.out.println("Pode entrar");
 }
 
 // uso de operadores lógicos dentro do if 
@@ -81,9 +81,9 @@ if(idade < 18 && !amigoDoDono) { //ser maior de idade e nao ser o amigo do dono)
 int idade = 15; 
 boolean amigoDoDono = false;
 if(idade < 18 || !amigoDoDono) { //ser maior de idade ou nao ser o amigo do dono) - vai dar não pode entrar 
-  System.out.println("Não	pode	entrar");
+  System.out.println("Não pode entrar");
 }else{
-  System.out.println("Pode	entrar");
+  System.out.println("Pode entrar");
 }
 
 // Utilização do operador == no if 
@@ -124,13 +124,13 @@ while( i < 10){
 ```
 # Programação Orientada a Objetos em Java 
 
-Considerando um um programa para	um banco. É bem fácil perceber	que	uma	 entidade	 extremamente importante	ao	nosso	sistema	é	a	conta. Nossa	ideia	aqui	é	generalizarmos	alguma	informação	juntamente com	as	funcionalidades	que	toda	conta	deve ter . 
+Considerando um um programa para um banco. É bem fácil perceber	que uma	entidade extremamente importante ao nosso sistema é a conta. Nossa ideia aqui é	generalizarmos	alguma	informação juntamente com as funcionalidades	que	toda	conta	deve ter . 
 
-O	que	toda	conta	tem	que	é	importante	para	nós?
+O que toda conta tem que é importante	para	nós?
 
-Número	da	conta;
+Número da conta;
 
-Nome	do	titular	da	conta;
+Nome do titular	da conta;
 
 Saldo.
 
@@ -266,6 +266,25 @@ boolean saca(double valor) {
 No exemplo acima o método saca não tem void na frente, portanto quando é acessado ele devolve algum tipo de informação. O return indica que o método terminará ali, retornando tal informação. 
 
 ![image](https://github.com/Vitormateusromancini/Estudo-de-Java-iniciante/assets/77472862/a08a675d-bd7a-4440-ae87-e331b038be01)
+
+## Referências 
+
+As referências são variáveis que declara para associar a um objeto, elas não guardam o object mas sim é uma maneira de acessar. Diferente de tipos primitivos como int e long, precisa-se dar new depois de declarar a variável, como no exemplo abaixo: 
+
+```Java
+
+public static void main(String[] args) {
+    Conta c1;
+    c1 = new Conta();
+    Conta c2;
+    c2 = new Conta();
+}
+
+```
+
+O correto é dizer que c1 se refere a um objeto. Sempre lembrar que, em Java, uma variável nunca é um objeto. Não há em Java, uma maneira de criar os conhecidos objeto pilha ou objeto local, pois todo objeto na linguagem em questão sem exceção é acessado por uma variável referência. Um exemplo é a figura abaixo:
+
+![image](https://github.com/Vitormateusromancini/Estudo-de-Java-iniciante/assets/77472862/54a54660-78d4-4124-84a3-13a9669b8306)
 
 
 
