@@ -286,7 +286,49 @@ O correto é dizer que c1 se refere a um objeto. Sempre lembrar que, em Java, um
 
 ![image](https://github.com/Vitormateusromancini/Estudo-de-Java-iniciante/assets/77472862/54a54660-78d4-4124-84a3-13a9669b8306)
 
+Essa forma de acessar o dado Conta é parecido com um ponteiro, no entanto não se pode considerar assim, já que a linguagem Java é Tipada :  **exigem que os tipos de dados sejam declarados explicitamente durante a escrita do código**
 
+Exemplo importante: 
+```Java 
+class TestaReferencias{
+    public satatic void main (String[] args){   
+       Conta c1 = new Conta(); 
+       c1.deposita(100);
+       Conta c2 = c1; //atenção
+       c2.deposita(200);
+
+       System.out.println(c1.saldo); 
+       System.out.println(c2.saldo);
+     }
+
+}
+```
+
+Neste caso tanto c1 quanto c2 graças ao operador = referenciam ao mesmo endereço Conta. 
+
+
+O operador == compara o conteúdo das variáveis, mas  essas variáveis não guardam o objeto, e sim o endereço em que ele se encontra. Portanto caso se cria dois endereços com variáveis iguais o operador == vai dar falso, como no exemplo abaixo. 
+
+```Java 
+    public satatic void main (String[] args){   
+       Conta c1 = new Conta(); 
+       c1.titular = "Duke";
+       C1.saldo = 227;
+   
+       Conta c2 = new Conta(); 
+       c2.titular = "Duke";
+       C2.saldo = 227;
+
+       if(c1==c2){
+       System.out.println("Contas iguais");
+       }
+     }
+```
+
+
+# Método Transfere()
+
+Se quisermos de 
 
 
 
